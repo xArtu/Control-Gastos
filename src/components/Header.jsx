@@ -1,7 +1,7 @@
 import NuevoPresupuesto from "./NuevoPresupuesto"
 import ControlPresupuesto from "./ControlPresupuesto"
 // eslint-disable-next-line react/prop-types
-const Header = ({presupuesto, setPresupuesto, isValidPresupuesto, setIsValidPresupuesto, gastos}) => {
+const Header = ({presupuesto, setPresupuesto, isValidPresupuesto, setIsValidPresupuesto, gastos, setGastos}) => {
   return (
     <header>
       <h1>Planificador de gastos</h1>
@@ -10,6 +10,9 @@ const Header = ({presupuesto, setPresupuesto, isValidPresupuesto, setIsValidPres
       <ControlPresupuesto
         presupuesto = {presupuesto}
         gastos = {gastos}
+        setGastos = {setGastos}
+        setPresupuesto = {setPresupuesto}
+        setIsValidPresupuesto = {setIsValidPresupuesto}
       />
       )
       :
